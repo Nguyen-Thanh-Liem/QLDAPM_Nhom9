@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+body,
+.main-menu > li > a,
+.ltext-102 {
+    font-family: "Roboto", sans-serif;
+}
+.hidden {
+    display: none !important;
+}
+.item-slick1 {
+    height: 600px; /* Đặt chiều cao cố định */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+/* CSS cho header */
+/* Các mục trong menu */
+.main-menu li {
+    display: inline-block;
+    margin: 0 10px; /* Điều chỉnh khoảng cách giữa các mục */
+}
+
+.container-menu-desktop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Đảm bảo header luôn ở trên */
+    background-color: white; /* Đặt màu nền để header rõ ràng */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tạo bóng cho header để phân biệt */
+}
+
+/* CSS cho phần nội dung sau header */
+.section-slide {
+    margin-top: 120px; /* Điều chỉnh khoảng cách này tương ứng với chiều cao của header */
+}
+
+/* Điều chỉnh thêm nếu cần cho mục hiển thị */
+.main-menu li a {
+    font-size: 13px; /* Điều chỉnh kích thước chữ nếu cần */
+    padding: 5px 5px; /* Giảm padding để tiết kiệm không gian */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333; /* Màu chữ */
+}
+/* Đảm bảo phần giỏ hàng và biểu tượng tìm kiếm không bị lệch */
+.wrap-icon-header {
+    display: flex;
+    align-items: center;
+}
+.icon-header-item {
+    color: #333;
+    font-size: 18px; /* Điều chỉnh kích thước icon nếu cần */
+    margin-left: 15px; /* Khoảng cách giữa các icon */
+}
+/* banner kích thươc bang nhau*/
+.sec-banner .block1 img {
+    width: 100%; /* Đảm bảo ảnh giãn đủ chiều ngang của container */
+    height: 300px; /* Chiều cao cố định cho tất cả các ảnh */
+    object-fit: cover; /* Giữ nguyên tỷ lệ ảnh và cắt phần thừa nếu cần */
+    border-radius: 10px; /* Thêm bo tròn góc (tuỳ chọn) */
+    display: block; /* Đảm bảo không có khoảng trắng xung quanh */
+}
+
+/* PRODUCTS */
+/* Định dạng tổng quát cho từng khung sản phẩm */
+.isotope-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Đảm bảo tên và giá tiền căn đều */
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 350px; /* Đặt chiều cao cố định cho từng khung sản phẩm */
+}
+
+/* Định dạng hình ảnh sản phẩm */
+.block2-pic img {
+    width: 100%;
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+    max-height: 200px; /* Đặt chiều cao tối đa */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+
+/* Định dạng tên sản phẩm */
+.block2-txt-child1 a {
+    font-size: 14px;
+    /* font-weight: bold; */
+    color: #999;
+    margin: 10px 0;
+    min-height: 40px; /* Đảm bảo tên sản phẩm có chiều cao tối thiểu */
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Giới hạn tối đa 2 dòng */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Định dạng giá tiền */
+.block2-txt-child1 span {
+    font-size: 16px;
+    color: #fc2020;
+
+    font-weight: 300;
+    text-align: center;
+    font-family: Poppins-Regular;
+    margin: 10px 0; /* Khoảng cách giữa tên sản phẩm và giá tiền */
+}
+
+/* Định dạng bố cục của block2 */
+.block2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+.hot-color {
+    color: #ffffff;
+    font-weight: bold;
+}
+/* DK ĐĂNG NHẬP */
+.dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 150px;
+    padding: 5px 0;
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+/* FORM ĐK DN */
+/* Thêm Font Awesome vào trang */
